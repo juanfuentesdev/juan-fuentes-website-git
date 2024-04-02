@@ -95,6 +95,13 @@ p{
 
 }
 
+.inicio-contenedor__enlace{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+    text-decoration: none;
+}
+
 
 .pagina2 {
     grid-area: pagina2;
