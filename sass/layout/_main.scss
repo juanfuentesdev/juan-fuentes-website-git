@@ -1,0 +1,277 @@
+
+
+h1{
+    text-align: center;
+    color: map-get($coloresdeletras, letrashs);
+    margin-bottom: 50px;
+    margin-top: 50px;
+    }
+    h2{
+        text-align: center;
+        color: map-get($coloresdeletras, letrashs);
+        margin-bottom: 25px;
+    }
+    p{
+        color: map-get($coloresdeletras, letrasps);
+        text-align: center;
+    }
+
+.discografia{
+        .songs-destacados {
+        @include flex1;
+            img:hover {
+            transform: scale(1.5);}}
+        .songs-2024 {
+            @extend .songs-destacados;
+            img:hover {
+            transform: scale(1.5);}}
+        .songs-2023 {
+            @extend .songs-destacados;
+            img:hover {
+            transform: scale(1.5);}}
+        .songs-2022 {
+            @extend .songs-destacados;
+            img:hover {
+            transform: scale(1.5);}}
+        .songs-2021_2020 {
+            @extend .songs-destacados;
+            img:hover {
+            transform: scale(1.5);}}
+            }
+
+.servicios{
+        .produccion {
+        @include grid1;} 
+                .imgprodu { 
+                    grid-area: div1; 
+                    margin-left: 20px;} 
+                .h2produ { 
+                    text-align: left; 
+                    margin-left: 40px;} 
+                .parrprodu1{ 
+                    grid-area: div2;} 
+                .parrprodu2{ 
+                    grid-area: div3; 
+                    text-align: justify; 
+                    margin-top: 20px;} 
+                .produpartext { 
+                    text-align: justify; 
+                    margin-left: 40px;} 
+                .produproductlist{ 
+                    grid-area: div4;  
+                    color: #E9E8E8; 
+                    margin-top: 20px;} 
+                .h3produproducts { 
+                    margin-left: 20px;} 
+                .produ_list_items{ 
+                    list-style-type:circle; 
+                    margin-left: 50px;} 
+        .mezcla{
+        @include grid2;}
+                .imgmezcla {
+                    grid-area: div1;
+                    margin-right: 20px;}
+                .h2mezcla {
+                    text-align: left;
+                    margin-right: 40px;}
+                .parrmezcla1{
+                    grid-area: div2;}
+                .parrmezcla2{
+                    grid-area: div3;
+                    text-align: justify;
+                    margin-top: 20px;}
+                .mezclapartext {
+                    text-align: justify;
+                    margin-right: 40px;}
+                .mezclaproductlist{
+                    grid-area: div4;
+                    color: #E9E8E8;
+                    margin-top: 20px;}
+                .h3mezclaproducts {
+                    margin-right: 20px;}
+                .mezcla_list_items{
+                    list-style-type:circle;
+                    margin-left: 50px;}
+        .master{
+            @extend .produccion;
+                .imgmaster {
+                    grid-area: div1;
+                    margin-left: 20px;}
+                .h2master {
+                    text-align: left;
+                    margin-left: 40px;}
+                .parrmaster1{
+                    grid-area: div2;}
+                .parrmaster2{
+                    grid-area: div3;
+                    text-align: justify;
+                    margin-top: 20px; }
+                .masterpartext {
+                    text-align: justify;
+                    margin-left: 40px; }
+                .masterproductlist{
+                    grid-area: div4;
+                    color: #E9E8E8;
+                    margin-top: 20px;}
+                .h3masterproducts {
+                    margin-left: 20px;}
+                .master_list_items{
+                    list-style-type:circle;
+                    margin-left: 50px;}}
+        .grabacion{
+            @extend .mezcla;}        
+        .edicion{
+            @extend .produccion;}   
+            .vocalcoach{
+                @extend .mezcla;}           
+        }    
+
+.acerca{
+        .acercademi-sec1{
+            display: grid;
+            grid-template-columns: repeat(4,1fr);    
+            grid-template-rows: repeat(2, 1fr);
+            grid-template-areas: 
+            "foto par1 par1 equip"
+            "foto par1 par1 software";}
+            .acercademipic {
+                grid-area: foto;
+                margin: 50px;}
+            .acercaparr1 {
+                grid-area: par1;
+                text-align: justify;
+                margin: 50px;}
+            .equipos {
+                grid-area: equip;
+                text-align: justify;
+                margin: 50px;
+                color: #E9E8E8;
+                justify-self: center;}
+                
+            .software {
+                grid-area: software;
+                text-align: justify;
+                margin: 50px;
+                color: #E9E8E8;
+                justify-self: center;}
+        .acercademi-sec2 {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);    
+            grid-template-rows: 1fr;
+            grid-template-areas: 
+            "plugins samples logos";
+            padding: 60px;}
+            .plugins {
+                grid-area: plugins;
+                color: #E9E8E8;
+                justify-self: center;
+                align-self: center;}
+            .samples {
+                grid-area: samples;
+                color: #E9E8E8;
+                justify-self: center;
+                align-self: center;}
+            .logos {
+                grid-area: logos;
+                color: #E9E8E8;
+                justify-self: center;
+                align-self: center;}
+        }
+
+.contacto{
+    .container__form{
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+        padding: 20px 0;
+        margin-top: 100px;
+        .form {
+            background-color: #15172b;
+            border-radius: 20px;
+            box-sizing: border-box;
+            height: auto;
+            padding: 20px;
+            width: 100%;
+            max-width: 680px;
+            .title {
+                color: #eee;
+                font-family: sans-serif;
+                font-size: 36px;
+                font-weight: 600;
+                margin-top: 30px;}
+            .subtitle {
+                color: #eee;
+                font-family: sans-serif;
+                font-size: 16px;
+                font-weight: 600;
+                margin-top: 10px;}
+            .input-container {
+                height: 50px;
+                position: relative;
+                width: 100%;
+                margin-top: 40px;
+                .input {
+                    background-color: #303245;
+                    border-radius: 12px;
+                    border: 0;
+                    box-sizing: border-box;
+                    color: #eee;
+                    font-size: 18px;
+                    height: 100%;
+                    outline: 0;
+                    padding: 4px 20px 0;
+                    width: 100%;}
+                .cut {
+                    background-color: #15172b;
+                    border-radius: 10px;
+                    height: 20px;
+                    left: 20px;
+                    position: absolute;
+                    top: -20px;
+                    transform: translateY(0);
+                    transition: transform 200ms;
+                    width: 76px;}
+                .cut-short {
+                    width: 120px;}
+                .input:focus ~ .cut,
+                .input:not(:placeholder-shown) ~ .cut {
+                    transform: translateY(8px);}
+                .placeholder {
+                    color: #65657b;
+                    font-family: sans-serif;
+                    left: 20px;
+                    line-height: 14px;
+                    pointer-events: none;
+                    position: absolute;
+                    transform-origin: 0 50%;
+                    transition: transform 200ms, color 200ms;
+                    top: 20px;}
+                .input:focus ~ .placeholder,
+                .input:not(:placeholder-shown) ~ .placeholder {
+                    transform: translateY(-30px) translateX(10px) scale(0.75);}
+                .input:not(:placeholder-shown) ~ .placeholder {
+                    color: #808097;}
+                .input:focus ~ .placeholder {
+                    color: #dc2f55;}
+            }
+            .submit {
+                background-color: #08d;
+                border-radius: 12px;
+                border: 0;
+                box-sizing: border-box;
+                color: #eee;
+                cursor: pointer;
+                font-size: 18px;
+                height: 50px;
+                margin-top: 38px;
+                text-align: center;
+                width: 100%;
+            }
+            .submit:active {
+                background-color: #06b;
+            }
+        }
+    }
+    }

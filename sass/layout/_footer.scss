@@ -1,0 +1,50 @@
+footer{
+    margin-top: 80px;
+    background-color: $headeryfooterbackground;
+    padding: 40px 0;
+    bottom: auto;
+    position: absolute;
+    width: 100%;
+    .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        .footer-row {
+            display: flex;
+            flex-wrap: wrap;
+            /* Es para que el footer se ponga en columnas en caso de que sea baja la resolución, una sección abajo de la otra */
+            .footer-links {
+                width: 25%;
+                padding: 0 15px;
+            /* Espacio donde irán los links, se hace un width para que se expanda un poco y padding para dejar un poco de espacio */
+                        h4{
+                            font-size: 20px;
+                            color: map-get($coloresdeletras, letrashs);
+                            margin-bottom: 25px;
+                            font-weight: 500;
+                            border-bottom: 2px solid map-get($coloresdeletras, letrasfooter);
+                            padding-bottom: 10px;
+                            display: inline-block;
+                            /* Aquí estoy modificando los títulos del footer:  "Mapa del sitio" y "Sígueme" y poner la rayita debajo*/
+                        }
+                        ul li a {
+                            font-size: 18px;
+                            text-decoration: none;
+                            color: map-get($coloresdeletras, letrasfooter);
+                            display: block;
+                            margin-bottom: 15px;
+                            transition: all .3s ease;
+                            &:hover {
+                                color: aliceblue;
+                                padding-left: 6px;
+                                /* Aquí le estoy poniendo que cambie de color cuando ponga el cursor encíma de los links */
+                                }
+                            }
+                        }
+                    }
+                }
+    .p-footer {
+                    margin-top: 30px ;
+                    color: map-get($coloresdeletras, letrasps);
+                    text-align: center;
+                }            
+    }

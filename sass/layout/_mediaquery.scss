@@ -1,0 +1,151 @@
+@media (max-width: 768px){
+    .header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    
+    .main-nav__item {
+    font-size: 18px;
+    }
+    
+    .h2index{
+    font-size: 8;    
+    }
+    
+    .inicio-contenedor{
+        display: grid;
+        margin-top: 50px;
+        grid-template-columns:repeat(4, 1fr);
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "pagina2 pagina3"
+        "foto-pagina2 foto-pagina3 "
+        "pagina4 pagina5"
+        "foto-pagina4 foto-pagina5"
+    }
+    .acercademipic{
+        width: auto;
+        height: 100%;
+    }
+    .acercademi-sec1 {
+        display: flex;
+        flex-direction: column;
+    }
+    .acercademi-sec2{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    
+    .plugins, .samples, .logos{
+        align-self: flex-start;
+        margin: 30px 0;
+    }
+
+    .produccion, .mezcla, .master {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0;
+        margin: 20px;
+        padding: 20px;
+        grid-template-areas:
+        "div1"
+        "div2"
+        "div3"
+        "div4";
+    }
+
+    .imgprodu, .imgmezcla {
+        width: 100%;
+        height: auto;
+        margin: 20px, 0;
+    }
+
+    .imgprodu, .h2produ, .produpartext, .h3produproducts, .produ_list_items {
+        margin-left: 20px;
+    }
+
+
+
+    }
+    
+    
+
+
+
+    
+    
+    @media (max-width: 425px) {
+    .header{
+        padding: 0
+    }
+    
+    .navbar li a {
+        text-decoration: none;
+        color: black;
+    }
+    
+    .inicio-contenedor{
+        display: grid;
+        margin: 30px auto;
+        grid-template-columns:repeat(1, 1fr);
+        grid-template-rows: auto auto auto auto;
+        grid-template-areas: 
+        "pagina2 "
+        "foto-pagina2"
+        "pagina3"
+        " foto-pagina3"
+        "pagina4"
+        "foto-pagina4"
+        "pagina5"
+        "foto-pagina5"
+    }
+    
+    .footer-row{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .footer-links {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    
+    .footer-links ul{
+        text-align: center;
+    }
+    
+    h2{
+        margin: 30px 0;
+        font-size: 18px;
+    }
+    
+    .produccion, .mezcla, .master {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        gap: 0;
+        margin: 20px;
+        padding: 20px;
+        grid-template-areas:
+        "div1"
+        "div2"
+        "div3"
+        "div4";
+    }
+    .imgprodu, .imgmezcla {
+        width: 100%;
+        height: auto;
+        margin: 20px, 0;
+    }
+
+    .imgprodu, .h2produ, .produpartext, .h3produproducts, .produ_list_items {
+        margin-left: 20px;
+    }
+
+    } 

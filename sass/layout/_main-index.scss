@@ -1,0 +1,48 @@
+.h2index{
+    color: map-get($coloresdeletras, letrashs);
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.inicio-contenedor {
+    display: grid;
+    margin-top: 50px;
+    margin-bottom: 100px;
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas: 
+    "pagina2 pagina3 pagina4 pagina5"
+    "foto-pagina2 foto-pagina3 foto-pagina4 foto-pagina5";
+    .inicio-contenedor__enlace{
+        margin: 0;
+        padding: 0;
+        color: map-get($coloresdeletras, letrasps);
+        text-decoration: none;
+                            }
+                    }
+
+                    .pagina2 {
+                        grid-area: pagina2;
+                        align-content: center}
+                    .pagina3 {
+                    grid-area: pagina3;
+                    align-content: center}
+                    .pagina4 {
+                        grid-area: pagina4;
+                        align-content: center}
+                    .pagina5 {
+                        grid-area: pagina5;
+                        align-content: center}
+                    .foto-pagina2 {
+                        grid-area: foto-pagina2;
+                        justify-self: center;}
+                    .foto-pagina3 {
+                        grid-area: foto-pagina3;
+                        justify-self: center;}
+                    .foto-pagina4 {
+                        grid-area: foto-pagina4;
+                        justify-self: center;}
+                    .foto-pagina5 {
+                        grid-area: foto-pagina5;
+                        justify-self: center;}                
