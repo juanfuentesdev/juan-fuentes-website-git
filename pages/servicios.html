@@ -15,6 +15,7 @@
     <meta property="og:image" content="https://github.com/juanfuentesdev/juan-fuentes-website-git/blob/main/assets/img/logo2.jpg?raw=true">
 
     <title>Servicios | Juan Fuentes Music Producer |</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x icon">
@@ -26,14 +27,22 @@
 
 
     <header>
-        <nav>
-            <ul class="main-nav"> 
-                <li class="main-nav__item"><a href="../index.html">Inicio</a></li>
-                <li class="main-nav__item"><a href="./discografia.html">Discografía</a></li>  
-                <li class="main-nav__item"><a href="#">Servicios</a></li>
-                <li class="main-nav__item"><a href="./acercademi.html">Acerca de mí</a></li>
-                <li class="main-nav__item"><a href="./contacto.html">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark main-nav w-100">
+            <div class="container-fluid ">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav container-fluid d-flex justify-content-center">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="./discografia.html">Discografía</a>
+                    <a class="nav-link active" href="#">Servicios</a>
+                    <a class="nav-link" href="./acercademi.html">Acerca de mí</a>
+                    <a class="nav-link" href="./contacto.html">Contacto</a>
+                </div>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -46,7 +55,7 @@
 
 <main class="servicios">
     <section class="produccion">
-        <img class="imgprodu"  src="../assets/img/produccionmusical.jpg" height="352" frameBorder="0"></a>
+        <img class="imgprodu"  src="../assets/img/produccionmusical.jpg" height="352" frameBorder="0">
 
         <div class="parrprodu1">
             <h2 class="h2produ">Producción Musical</h2>
@@ -57,13 +66,10 @@
                 serie o videojuego o un jingle pegadizo para tu marca, estoy listo para cumplir con tus expectativas y superarlas.
                 <br>
                 <br>
-                Ofrezco producción musical personalizada: Nos especializamos en crear música original y única que se adapte a tus necesidades específicas. Desde la composición de melodías hasta la grabación y mezcla final, cada aspecto de tu proyecto estará cuidadosamente elaborado y vigilado por mi, para brindarte un producto 100% satisfactorio.
+                Ofrezco producción musical personalizada: Nos especializamos en crear música original y única que se adapte a tus necesidades específicas. 
                 <br>
                 <br>
-                Cuento con un equipo de trabajo profesional, con una amplia gama de instrumentos y equipos de grabación de alta calidad para capturar el sonido perfecto. Ya sea que necesites guitarras eléctricas potentes, suaves cuerdas de piano o ritmos electrónicos pulsantes, tenemos los medios para hacerlo realidad.
-                <br>
-                <br>
-                Trabajo con Avid Pro Tools, DAW líder en la industria musical, con una amplia gama de herramientas, plugins e instrumentos virtuales con una enorme variadad de samples y herramientas para cualquier tipo de música.
+                Cuento con una amplia gama de herramientas, plugins e instrumentos virtuales con una enorme variadad de samples para cualquier tipo de música.
             </p>
         </div>
 
@@ -71,13 +77,10 @@
             <p class="produpartext">¿Por qué elegirme?
                 <br>
                 <br>
-                Profesionalismo: Me tomo en serio cada proyecto y me comprometo a ofrecerte resultados de alta calidad que superen tus expectativas.
-                <br>
-                <br>                
-                Creatividad: Impulsado por la pasión por la música y la creatividad, lo que se refleja en cada nota que plasmo en cada proyecto.
+                Profesionalismo: Me tomo en serio cada proyecto y me comprometo a ofrecerte resultados de alta calidad que superen tus expectativas.             
                 <br>
                 <br>
-                Colaboración: Valor tu opinión y colaboraré estrechamente contigo para asegurarnos de que tu visión se materialice en cada paso del proceso.
+                Colaboración: Valoraré tu opinión y colaboraré estrechamente contigo para asegurarnos de que tu visión se materialice en cada paso del proceso.
                 <br>
                 <br>
                 Resultados Garantizados: Tu satisfacción es mi prioridad. Nos esforzamos por entregar proyectos que no solo cumplan, sino que superen tus requisitos y objetivos musicales.
@@ -102,24 +105,17 @@
 <!-- Servicio #2 Mezcla -->
 
 <section class="mezcla">
-    <img class="imgmezcla"  src="../assets/img/mezcla.jpg" height="352" frameBorder="0"></a>
+    <img class="imgmezcla"  src="../assets/img/mezcla.jpg" height="352" frameBorder="0">
 
-    <div class="parrprodu1">
+    <div class="parrmezcla1">
         <h2 class="h2mezcla">Mezcla</h2>
-        <p class="mezclapartext">¿Estás buscando el sonido perfecto para tu próximo proyecto musical? ¿Necesitas llevar tu música al siguiente nivel? ¡Estás en el lugar correcto!
+        <p class="mezclapartext">¿Tienes tu canción o proyecto ya grabado y quieres un sonido perfecto para las plataformas? 
             <br>
             <br>
-            Estoy aquí para transformar tus visiones en realidad. Ya sea que necesites una pista original para tu próximo single,  álbum, una banda sonora para tu película, 
-            serie o videojuego o un jingle pegadizo para tu marca, estoy listo para cumplir con tus expectativas y superarlas.
+            Te ayudaré a lograr un sonido profesional y único, que te haga sentir orgulloso de mostrar tu canción a todo el mundo.
             <br>
             <br>
-            Ofrezco producción musical personalizada: Nos especializamos en crear música original y única que se adapte a tus necesidades específicas. Desde la composición de melodías hasta la grabación y mezcla final, cada aspecto de tu proyecto estará cuidadosamente elaborado y vigilado por mi, para brindarte un producto 100% satisfactorio.
-            <br>
-            <br>
-            Cuento con un equipo de trabajo profesional, con una amplia gama de instrumentos y equipos de grabación de alta calidad para capturar el sonido perfecto. Ya sea que necesites guitarras eléctricas potentes, suaves cuerdas de piano o ritmos electrónicos pulsantes, tenemos los medios para hacerlo realidad.
-            <br>
-            <br>
-            Trabajo con Avid Pro Tools, DAW líder en la industria musical, con una amplia gama de herramientas, plugins e instrumentos virtuales con una enorme variadad de samples y herramientas para cualquier tipo de música.
+            Trabajo con Avid Pro Tools, DAW líder en la industria musical, con una amplia gama de herramientas, plugins de todo tipo para lograr ese sonido con el que sueñas. 
         </p>
     </div>
 
@@ -130,27 +126,27 @@
             Profesionalismo: Me tomo en serio cada proyecto y me comprometo a ofrecerte resultados de alta calidad que superen tus expectativas.
             <br>
             <br>                
-            Creatividad: Impulsado por la pasión por la música y la creatividad, lo que se refleja en cada nota que plasmo en cada proyecto.
+            Creatividad: Siempre buscaré lo mejor para tu proyecto, buscando sacar el potencial de cada elemento.
             <br>
             <br>
-            Colaboración: Valor tu opinión y colaboraré estrechamente contigo para asegurarnos de que tu visión se materialice en cada paso del proceso.
+            Revisiones: Ofrezco cambios que quieras de hacer para tener el producto final deseado, con el que estés conforme y feliz.
             <br>
             <br>
-            Resultados Garantizados: Tu satisfacción es mi prioridad. Nos esforzamos por entregar proyectos que no solo cumplan, sino que superen tus requisitos y objetivos musicales.
+            Resultados Garantizados: Haré todo lo necesario hasta lograr ese sonido con el que soñaste. 
         </p>
     </div>
 
     <div class="mezclaproductlist">
-        <h3 class="h3mezclaproducts">Productos</h3>
+        <h3 class="h3mezclaproducts">Mezcla para:</h3>
         <ul>
-                <li class="mezcla_list_items">Producción de un singles, EP o Album</li>
-                <li class="mezcla_list_items">Arreglos musicales</li>
-                <li class="mezcla_list_items">Beats</li>
-                <li class="mezcla_list_items">Instrumentales</li>
+                <li class="mezcla_list_items">Singles</li>
+                <li class="mezcla_list_items">EP</li>
+                <li class="mezcla_list_items">Album</li>
+                <li class="mezcla_list_items">Instrumental</li>
                 <li class="mezcla_list_items">Jingles</li>
-                <li class="mezcla_list_items">Composición Instrumental</li>
-                <li class="mezcla_list_items">Grabación de instrumentos</li>
-                <li class="mezcla_list_items">Vocal Coaching</li>
+                <li class="mezcla_list_items">Serie</li>
+                <li class="mezcla_list_items">Película</li>
+                <li class="mezcla_list_items">Videojuego</li>
         </ul>
     </div>
 </section>
@@ -158,23 +154,18 @@
 <!-- Servicio #3 Masterización -->
 
 <section class="master">
-    <img class="imgprodu"  src="../assets/img/mastering.jpg" height="352" frameBorder="0"></a>
+    <img class="imgprodu"  src="../assets/img/mastering.jpg" height="352" frameBorder="0">
 
     <div class="parrmaster1">
         <h2 class="h2master">Masterización</h2>
-        <p class="masterpartext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita itaque tempore ea neque repellat cupiditate odio a praesentium illo, autem, nihil nobis distinctio! Autem et, distinctio animi deserunt consequuntur ducimus.
+        <p class="masterpartext">¿Necesitas ese último toque profesinal para tu canción o proyecto? Te ayudaré a darte el sonido final para que tu canción esté lista para todas las plataformas y medios de difusión con la mejor calidad posible.
             <br>
             <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus doloremque fugiat nihil repudiandae ad qui in nulla explicabo commodi accusantium vel dicta, harum debitis. Aspernatur error eligendi itaque nostrum enim?
+            Sonido profesional que se adapte al género o estílo de tu canción.
             <br>
             <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, odit optio praesentium necessitatibus architecto facilis tempore ut iusto recusandae, excepturi quibusdam, cum error? Autem nobis necessitatibus cumque id doloribus dicta!
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequatur blanditiis iste sapiente, pariatur explicabo possimus et neque quibusdam saepe, dignissimos aliquid molestiae quisquam minus mollitia ex, tempora alias quae.
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officia sunt deserunt, amet, facere animi labore eum deleniti nobis nulla quia. Illo nam exercitationem corporis accusantium quaerat? Architecto, laudantium blanditiis.
+            Volumen perfecto y equilibrio de loudness según lo que requiera tu canción.
+
         </p>
     </div>
 
@@ -182,30 +173,24 @@
         <p class="masterpartext">¿Por qué elegirme?
             <br>
             <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, soluta officiis similique, illo laborum asperiores autem voluptatum fugiat sunt laudantium quisquam numquam id tempore eum quia incidunt ut velit explicabo.
+            Profesionalismo: Años de experiencia y más de 100 canciones finalizadas.
             <br>
             <br>                
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, aliquid. Eveniet libero possimus eligendi rerum minus, aliquid ratione doloremque neque aperiam laboriosam mollitia expedita sed reprehenderit ipsa similique odit repellendus?
+            Creatividad: Siempre buscaré lo mejor para tu proyecto, buscando sacar el potencial de tu canción.
             <br>
             <br>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio ducimus, esse quaerat nisi adipisci hic fugit ex? Omnis nostrum alias, fugit, maxime ea dolorem dolores quo rem inventore doloremque mollitia.
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque placeat magni eveniet molestias non quod cupiditate quos enim deserunt pariatur impedit, temporibus fugiat alias nulla id eius iure blanditiis et?
+            Resultados Garantizados: Lo primero siempre será que estés satisfecho con tu proyecto. 
         </p>
     </div>
 
     <div class="masterproductlist">
         <h3 class="h3masterproducts">Productos</h3>
         <ul>
-                <li class="master_list_items">Producción de un singles, EP o Album</li>
-                <li class="master_list_items">Arreglos musicales</li>
-                <li class="master_list_items">Beats</li>
-                <li class="master_list_items">Instrumentales</li>
-                <li class="master_list_items">Jingles</li>
-                <li class="master_list_items">Composición Instrumental</li>
-                <li class="master_list_items">Grabación de instrumentos</li>
-                <li class="master_list_items">Vocal Coaching</li>
+            <li class="mezcla_list_items">Singles</li>
+            <li class="mezcla_list_items">EP</li>
+            <li class="mezcla_list_items">Album</li>
+            <li class="mezcla_list_items">Instrumental</li>
+            <li class="mezcla_list_items">Jingles</li>
         </ul>
     </div>
 </section>
@@ -213,23 +198,19 @@
 <!-- Servicio #4 Grabación -->
 
 <section class="grabacion">
-<img class="imgmezcla"  src="../assets/img/recording.jpg" height="352" frameBorder="0"></a>
+<img class="imgmezcla"  src="../assets/img/recording.jpg" height="352" frameBorder="0">
 
 <div class="parrprodu1">
     <h2 class="h2mezcla">Grabación</h2>
-    <p class="mezclapartext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita itaque tempore ea neque repellat cupiditate odio a praesentium illo, autem, nihil nobis distinctio! Autem et, distinctio animi deserunt consequuntur ducimus.
+    <p class="mezclapartext">Me apasiona ayudar a los músicos y artistas a capturar su mejor sonido. 
         <br>
         <br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus doloremque fugiat nihil repudiandae ad qui in nulla explicabo commodi accusantium vel dicta, harum debitis. Aspernatur error eligendi itaque nostrum enim?
+        Ofrezco servicios de grabación de instrumentos y voces en un entorno profesional y acogedor, diseñado para inspirar la creatividad y obtener resultados excepcionales.
         <br>
         <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, odit optio praesentium necessitatibus architecto facilis tempore ut iusto recusandae, excepturi quibusdam, cum error? Autem nobis necessitatibus cumque id doloribus dicta!
+        Cuento con un equipo de instrumentistas profesionales con instrumentos de la más alta calidad.
         <br>
         <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequatur blanditiis iste sapiente, pariatur explicabo possimus et neque quibusdam saepe, dignissimos aliquid molestiae quisquam minus mollitia ex, tempora alias quae.
-        <br>
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officia sunt deserunt, amet, facere animi labore eum deleniti nobis nulla quia. Illo nam exercitationem corporis accusantium quaerat? Architecto, laudantium blanditiis.
     </p>
 </div>
 
@@ -237,30 +218,24 @@
     <p class="mezclapartext">¿Por qué elegirme?
         <br>
         <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, soluta officiis similique, illo laborum asperiores autem voluptatum fugiat sunt laudantium quisquam numquam id tempore eum quia incidunt ut velit explicabo.
+        Profesionalismo: Mi meta siempre será que suenes increíble.
         <br>
         <br>                
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, aliquid. Eveniet libero possimus eligendi rerum minus, aliquid ratione doloremque neque aperiam laboriosam mollitia expedita sed reprehenderit ipsa similique odit repellendus?
-        <br>
-        <br>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio ducimus, esse quaerat nisi adipisci hic fugit ex? Omnis nostrum alias, fugit, maxime ea dolorem dolores quo rem inventore doloremque mollitia.
-        <br>
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque placeat magni eveniet molestias non quod cupiditate quos enim deserunt pariatur impedit, temporibus fugiat alias nulla id eius iure blanditiis et?
+        Creatividad: Te acompañaré y apoyaré en el proceso, buscando llevarte a tu máximo potencial en cada toma.
     </p>
 </div>
 
 <div class="mezclaproductlist">
     <h3 class="h3mezclaproducts">Productos</h3>
     <ul>
-            <li class="mezcla_list_items">Producción de un singles, EP o Album</li>
-            <li class="mezcla_list_items">Arreglos musicales</li>
-            <li class="mezcla_list_items">Beats</li>
-            <li class="mezcla_list_items">Instrumentales</li>
-            <li class="mezcla_list_items">Jingles</li>
-            <li class="mezcla_list_items">Composición Instrumental</li>
-            <li class="mezcla_list_items">Grabación de instrumentos</li>
-            <li class="mezcla_list_items">Vocal Coaching</li>
+            <li class="mezcla_list_items">Grabación de voces</li>
+            <li class="mezcla_list_items">Guitarras eléctricas</li>
+            <li class="mezcla_list_items">Guitarras acústicas</li>
+            <li class="mezcla_list_items">Bajo</li>
+            <li class="mezcla_list_items">Batería</li>
+            <li class="mezcla_list_items">Piano</li>
+            <li class="mezcla_list_items">Teclados</li>
+            <li class="mezcla_list_items">Cuerdas</li>
     </ul>
 </div>
 </section>
@@ -271,20 +246,17 @@
     <img class="imgprodu"  src="../assets/img//editing.jpg" height="352" frameBorder="0"></a>
 
     <div class="parrprodu1">
-        <h2 class="h2produ">Edición</h2>
-        <p class="produpartext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita itaque tempore ea neque repellat cupiditate odio a praesentium illo, autem, nihil nobis distinctio! Autem et, distinctio animi deserunt consequuntur ducimus.
+        <h2 class="h2produ">Edición y reparación</h2>
+        <p class="produpartext">¿Buscas la perfección para tus tomas y grabaciones? ¿Quieres que tu voz suene perfecta y a la moda? ¿Quieres quitar ruidos molestos que dañan tu track? 
             <br>
             <br>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus doloremque fugiat nihil repudiandae ad qui in nulla explicabo commodi accusantium vel dicta, harum debitis. Aspernatur error eligendi itaque nostrum enim?
+            Ofrezco soluciones para mejorar la calidad y el impacto de tu audio. Desde correcciones sutiles hasta transformaciones creativas, estoy para ayudarte a alcanzar el sonido perfecto que estás buscando.
             <br>
             <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, odit optio praesentium necessitatibus architecto facilis tempore ut iusto recusandae, excepturi quibusdam, cum error? Autem nobis necessitatibus cumque id doloribus dicta!
+            Cuento con herramientas para reparar y restaurar tu audio, quitar ruidos molestos que dañan la experiencia y no dejan brillar tu toma.
             <br>
             <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequatur blanditiis iste sapiente, pariatur explicabo possimus et neque quibusdam saepe, dignissimos aliquid molestiae quisquam minus mollitia ex, tempora alias quae.
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officia sunt deserunt, amet, facere animi labore eum deleniti nobis nulla quia. Illo nam exercitationem corporis accusantium quaerat? Architecto, laudantium blanditiis.
+            Con el poder de Melodyne y Autotune cuento con todo lo necesario para corregir esas notas que se quedaron muy cerca, o llevarte a ese sonido moderno, o hacer algo creativo que no se parezca a nada y te de originalidad.
         </p>
     </div>
 
@@ -292,30 +264,27 @@
         <p class="produpartext">¿Por qué elegirme?
             <br>
             <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, soluta officiis similique, illo laborum asperiores autem voluptatum fugiat sunt laudantium quisquam numquam id tempore eum quia incidunt ut velit explicabo.
+            Atención al detalle: Soy altamente cuidadoso con cada nota y con cada proceso, buscando siempre la perfección.
             <br>
             <br>                
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, aliquid. Eveniet libero possimus eligendi rerum minus, aliquid ratione doloremque neque aperiam laboriosam mollitia expedita sed reprehenderit ipsa similique odit repellendus?
+            Creatividad: Desde un efecto extraño, una distorsión o modulación, hasta una voz super robótica, tengo miles de herramientas disponibles para dejar fluir la creatividad.
             <br>
             <br>
-            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio ducimus, esse quaerat nisi adipisci hic fugit ex? Omnis nostrum alias, fugit, maxime ea dolorem dolores quo rem inventore doloremque mollitia.
-            <br>
-            <br>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque placeat magni eveniet molestias non quod cupiditate quos enim deserunt pariatur impedit, temporibus fugiat alias nulla id eius iure blanditiis et?
+            Software especializado: Cuento con los programas y plugins líderes en el mercado para corregir, reparar, restaurar y crear ese sonído único que mereces.
         </p>
     </div>
 
     <div class="produproductlist">
         <h3 class="h3produproducts">Productos</h3>
         <ul>
-                <li class="produ_list_items">Producción de un singles, EP o Album</li>
-                <li class="produ_list_items">Arreglos musicales</li>
-                <li class="produ_list_items">Beats</li>
-                <li class="produ_list_items">Instrumentales</li>
-                <li class="produ_list_items">Jingles</li>
-                <li class="produ_list_items">Composición Instrumental</li>
-                <li class="produ_list_items">Grabación de instrumentos</li>
-                <li class="produ_list_items">Vocal Coaching</li>
+                <li class="produ_list_items">Corrección de afinación</li>
+                <li class="produ_list_items">Autotune</li>
+                <li class="produ_list_items">Reparación de audio</li>
+                <li class="produ_list_items">Restauración de audio</li>
+                <li class="produ_list_items">Supresores de ruido</li>
+                <li class="produ_list_items">Edición creativa</li>
+                <li class="produ_list_items">Edición correctiva</li>
+                <li class="produ_list_items">Corrección de Timming</li>
         </ul>
     </div>
 </section>
@@ -327,19 +296,16 @@
 
 <div class="parrprodu1">
     <h2 class="h2mezcla">Vocal Coaching</h2>
-    <p class="mezclapartext">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Expedita itaque tempore ea neque repellat cupiditate odio a praesentium illo, autem, nihil nobis distinctio! Autem et, distinctio animi deserunt consequuntur ducimus.
+    <p class="mezclapartext">¿Estás buscando darle vida a tus grabaciones vocales? ¿Quieres pulir tu técnica para alcanzar nuevos niveles de excelencia en cada toma? ¡Has llegado al lugar indicado!
         <br>
         <br>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus doloremque fugiat nihil repudiandae ad qui in nulla explicabo commodi accusantium vel dicta, harum debitis. Aspernatur error eligendi itaque nostrum enim?
+        Entiendo la importancia de una voz poderosa y cautivadora en cualquier proyecto de grabación. Mi meta es potenciar tu voz y llevar tus interpretaciones al siguiente nivel.
         <br>
         <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias, odit optio praesentium necessitatibus architecto facilis tempore ut iusto recusandae, excepturi quibusdam, cum error? Autem nobis necessitatibus cumque id doloribus dicta!
+        Coaching Personalizado: Cada sesión se adapta a tus necesidades y objetivos específicos. Trabajaremos en fortalecer tus puntos fuertes y superar tus desafíos vocales.
         <br>
         <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum consequatur blanditiis iste sapiente, pariatur explicabo possimus et neque quibusdam saepe, dignissimos aliquid molestiae quisquam minus mollitia ex, tempora alias quae.
-        <br>
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit, officia sunt deserunt, amet, facere animi labore eum deleniti nobis nulla quia. Illo nam exercitationem corporis accusantium quaerat? Architecto, laudantium blanditiis.
+        Preparación para Grabaciones: Te ayudaremos a prepararte mental y vocalmente para tus sesiones de grabación, asegurándonos de que des lo mejor de ti en cada toma.
     </p>
 </div>
 
@@ -347,57 +313,25 @@
     <p class="mezclapartext">¿Por qué elegirme?
         <br>
         <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea, soluta officiis similique, illo laborum asperiores autem voluptatum fugiat sunt laudantium quisquam numquam id tempore eum quia incidunt ut velit explicabo.
+        Experiencia Profesional: Cuento con años de experiencia en la industria musical y de grabación.
         <br>
         <br>                
-        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Tempore, aliquid. Eveniet libero possimus eligendi rerum minus, aliquid ratione doloremque neque aperiam laboriosam mollitia expedita sed reprehenderit ipsa similique odit repellendus?
-        <br>
-        <br>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio ducimus, esse quaerat nisi adipisci hic fugit ex? Omnis nostrum alias, fugit, maxime ea dolorem dolores quo rem inventore doloremque mollitia.
-        <br>
-        <br>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque placeat magni eveniet molestias non quod cupiditate quos enim deserunt pariatur impedit, temporibus fugiat alias nulla id eius iure blanditiis et?
+        Enfoque Personalizado: Nos enfocamos en cada cliente de manera individual, comprendiendo sus metas y trabajando juntos para alcanzarlas.
     </p>
 </div>
 
 <div class="mezclaproductlist">
     <h3 class="h3mezclaproducts">Productos</h3>
     <ul>
-            <li class="mezcla_list_items">Producción de un singles, EP o Album</li>
-            <li class="mezcla_list_items">Arreglos musicales</li>
-            <li class="mezcla_list_items">Beats</li>
-            <li class="mezcla_list_items">Instrumentales</li>
-            <li class="mezcla_list_items">Jingles</li>
-            <li class="mezcla_list_items">Composición Instrumental</li>
-            <li class="mezcla_list_items">Grabación de instrumentos</li>
-            <li class="mezcla_list_items">Vocal Coaching</li>
+            <li class="mezcla_list_items">Vocal Coaching en grabaciones de voces</li>
+            <li class="mezcla_list_items">Vocal Coaching en grabaciones de coros</li>
+            <li class="mezcla_list_items">Preparación para grabaciones</li>
+            <li class="mezcla_list_items">Mentoría en todo el proceso de grabación, edición y postproducción</li>
+            <li class="mezcla_list_items">Grabación de voces de fondo y coristas</li>
     </ul>
 </div>
 </section>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </main>
-
-
-    <!--
--------------------------------------------------------------------------------        
-        A PARTIR DE AQUÍ ESTÁ EL FOOTER DE LA PÁGINA
-------------------------------------------------------------------------------    
-    -->
-
 
 <footer class="footer">
     <div class="container">
@@ -443,6 +377,9 @@
     <p class="p-footer">&copy; 2024 Juan Fuentes Music Producer</p>
     
 </footer>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     
 </body>
 </html>

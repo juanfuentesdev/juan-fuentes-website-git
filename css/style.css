@@ -6,6 +6,7 @@ Mapas
 mixins
 funciones
 **/
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -41,7 +42,8 @@ header nav .main-nav__item a:hover {
 
 body {
   background-color: rgb(5, 2, 22);
-  font-family: sans-serif;
+  font-family: "Mulish", sans-serif;
+  font-optical-sizing: auto;
   height: 100vh;
 }
 body .center-logo {
@@ -101,24 +103,67 @@ footer .p-footer {
 
 .h2index {
   color: #E9E8E8;
-  text-align: center;
+  text-align: left;
+  font-weight: bold;
+  font-size: 60px;
   padding-top: 50px;
   padding-bottom: 50px;
 }
 
+.container-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-hero {
+  display: flex;
+  width: 100%;
+  max-width: 1120px;
+}
+.container-hero img {
+  width: 100%;
+  max-width: 600px;
+  height: 100%;
+}
+
 .inicio-contenedor {
-  display: grid;
-  margin-top: 50px;
-  margin-bottom: 100px;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "pagina2 pagina3 pagina4 pagina5" "foto-pagina2 foto-pagina3 foto-pagina4 foto-pagina5";
+  display: flex;
+  justify-content: space-between;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 .inicio-contenedor .inicio-contenedor__enlace {
   margin: 0;
   padding: 0;
   color: #E9E8E8;
   text-decoration: none;
+  transition: 0.3s ease-in-out;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+}
+.inicio-contenedor .inicio-contenedor__enlace:hover {
+  filter: grayscale(0);
+  -webkit-filter: grayscale(0%);
+}
+.inicio-contenedor .inicio-contenedor__enlace img {
+  width: 100%;
+  max-width: 450px;
+  height: auto;
+  max-height: 200px;
+  padding: 0 10px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.inicio-contenedor .inicio-contenedor__enlace h2 {
+  font-size: 22px;
+}
+.inicio-contenedor h2 {
+  margin: 0;
 }
 
 .pagina2 {
@@ -171,7 +216,8 @@ h1 {
 h2 {
   text-align: center;
   color: #E9E8E8;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 p {
@@ -179,6 +225,24 @@ p {
   text-align: center;
 }
 
+.escuchapar {
+  padding: 20px 50px;
+  margin: 0;
+}
+
+.discografia img {
+  transition: 300ms ease-in-out;
+  margin: 5px 0;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  -webkit-transition: 300ms ease-in-out;
+  -moz-transition: 300ms ease-in-out;
+  -ms-transition: 300ms ease-in-out;
+  -o-transition: 300ms ease-in-out;
+}
 .discografia .songs-destacados, .discografia .songs-2021_2020, .discografia .songs-2022, .discografia .songs-2023, .discografia .songs-2024 {
   display: flex;
   flex-direction: row;
@@ -187,19 +251,27 @@ p {
   margin-bottom: 50px;
 }
 .discografia .songs-destacados img:hover, .discografia .songs-2021_2020 img:hover, .discografia .songs-2022 img:hover, .discografia .songs-2023 img:hover, .discografia .songs-2024 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 .discografia .songs-2024 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -o-transform: scale(1.1);
 }
 .discografia .songs-2023 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 .discografia .songs-2022 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 .discografia .songs-2021_2020 img:hover {
-  transform: scale(1.5);
+  transform: scale(1.1);
 }
 
 .servicios .produccion, .servicios .edicion, .servicios .master {
@@ -216,14 +288,18 @@ p {
 .servicios .h2produ {
   text-align: left;
   margin-left: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 .servicios .parrprodu1 {
   grid-area: div2;
+  padding: 20px 400px 20px 50px;
 }
 .servicios .parrprodu2 {
   grid-area: div3;
   text-align: justify;
   margin-top: 20px;
+  padding: 20px 400px 20px 50px;
 }
 .servicios .produpartext {
   text-align: justify;
@@ -233,13 +309,16 @@ p {
   grid-area: div4;
   color: #E9E8E8;
   margin-top: 20px;
+  padding: 20px 30px 20px 0px;
 }
 .servicios .h3produproducts {
   margin-left: 20px;
+  margin-bottom: 40px;
 }
 .servicios .produ_list_items {
   list-style-type: circle;
   margin-left: 50px;
+  padding: 2px;
 }
 .servicios .mezcla, .servicios .vocalcoach, .servicios .grabacion {
   display: grid;
@@ -253,16 +332,21 @@ p {
   margin-right: 20px;
 }
 .servicios .h2mezcla {
-  text-align: left;
+  text-align: right;
   margin-right: 40px;
+  margin-top: 0;
+  margin-bottom: 20px;
 }
 .servicios .parrmezcla1 {
   grid-area: div2;
+  padding: 20px 20px 20px 20px;
 }
 .servicios .parrmezcla2 {
   grid-area: div3;
   text-align: justify;
   margin-top: 20px;
+  margin-top: 20px;
+  padding: 20px 30px 20px 50px;
 }
 .servicios .mezclapartext {
   text-align: justify;
@@ -272,13 +356,16 @@ p {
   grid-area: div4;
   color: #E9E8E8;
   margin-top: 20px;
+  padding: 20px 30px 20px 0px;
 }
 .servicios .h3mezclaproducts {
   margin-right: 20px;
+  margin-bottom: 40px;
 }
 .servicios .mezcla_list_items {
   list-style-type: circle;
   margin-left: 50px;
+  padding: 2px;
 }
 .servicios .master .imgmaster {
   grid-area: div1;
@@ -312,59 +399,41 @@ p {
   list-style-type: circle;
   margin-left: 50px;
 }
+.acerca {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .acerca .acercademi-sec1 {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  grid-template-areas: "foto par1 par1 equip" "foto par1 par1 software";
+  max-width: 1120px;
+  display: flex;
 }
-.acerca .acercademipic {
-  grid-area: foto;
-  margin: 50px;
-}
-.acerca .acercaparr1 {
-  grid-area: par1;
-  text-align: justify;
-  margin: 50px;
-}
-.acerca .equipos {
-  grid-area: equip;
-  text-align: justify;
-  margin: 50px;
-  color: #E9E8E8;
-  justify-self: center;
-}
-.acerca .software {
-  grid-area: software;
-  text-align: justify;
-  margin: 50px;
-  color: #E9E8E8;
-  justify-self: center;
+.acerca .acercademi-sec1 .acercademipic {
+  width: 100%;
 }
 .acerca .acercademi-sec2 {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 1fr;
-  grid-template-areas: "plugins samples logos";
-  padding: 60px;
+  display: flex;
+  margin: 50px 0;
 }
-.acerca .plugins {
-  grid-area: plugins;
-  color: #E9E8E8;
-  justify-self: center;
-  align-self: center;
+.acerca .acercademi-sec2 .acercademi-sec2-card {
+  margin: 0 10px;
 }
-.acerca .samples {
-  grid-area: samples;
+.acerca .acercademi-sec2 .acercademi-sec2-card h3 {
   color: #E9E8E8;
-  justify-self: center;
-  align-self: center;
+  font-size: 22px;
 }
-.acerca .logos {
-  grid-area: logos;
-  color: #E9E8E8;
-  justify-self: center;
-  align-self: center;
+.acerca .acercademi-sec2 .acercademi-sec2-card .acercademi-sec2-card-list {
+  color: #979797;
+}
+.acerca .logos ul {
+  display: flex;
+  width: 100%;
+}
+.acerca .logos ul .imgprodu {
+  margin-left: 10px;
+  width: 70px;
+  height: 70px;
 }
 
 .contacto .container__form {
@@ -376,7 +445,7 @@ p {
   padding: 20px 0;
   margin-top: 100px;
 }
-.contacto .container__form .form {
+.contacto .container__form .form-contact {
   background-color: #15172b;
   border-radius: 20px;
   box-sizing: border-box;
@@ -385,27 +454,27 @@ p {
   width: 100%;
   max-width: 680px;
 }
-.contacto .container__form .form .title {
+.contacto .container__form .form-contact .title-contact {
   color: #eee;
   font-family: sans-serif;
   font-size: 36px;
   font-weight: 600;
   margin-top: 30px;
 }
-.contacto .container__form .form .subtitle {
+.contacto .container__form .form-contact .subtitle-contact {
   color: #eee;
   font-family: sans-serif;
   font-size: 16px;
   font-weight: 600;
   margin-top: 10px;
 }
-.contacto .container__form .form .input-container {
+.contacto .container__form .form-contact .input-container-contact {
   height: 50px;
   position: relative;
   width: 100%;
   margin-top: 40px;
 }
-.contacto .container__form .form .input-container .input {
+.contacto .container__form .form-contact .input-container-contact .input-contact {
   background-color: #303245;
   border-radius: 12px;
   border: 0;
@@ -417,7 +486,7 @@ p {
   padding: 4px 20px 0;
   width: 100%;
 }
-.contacto .container__form .form .input-container .cut {
+.contacto .container__form .form-contact .input-container-contact .cut {
   background-color: #15172b;
   border-radius: 10px;
   height: 20px;
@@ -428,14 +497,14 @@ p {
   transition: transform 200ms;
   width: 76px;
 }
-.contacto .container__form .form .input-container .cut-short {
+.contacto .container__form .form-contact .input-container-contact .cut-short {
   width: 120px;
 }
-.contacto .container__form .form .input-container .input:focus ~ .cut,
-.contacto .container__form .form .input-container .input:not(:placeholder-shown) ~ .cut {
+.contacto .container__form .form-contact .input-container-contact .input-contact:focus ~ .cut,
+.contacto .container__form .form-contact .input-container-contact .input-contact:not(:placeholder-shown) ~ .cut {
   transform: translateY(8px);
 }
-.contacto .container__form .form .input-container .placeholder {
+.contacto .container__form .form-contact .input-container-contact .placeholder-contact {
   color: #65657b;
   font-family: sans-serif;
   left: 20px;
@@ -446,17 +515,17 @@ p {
   transition: transform 200ms, color 200ms;
   top: 20px;
 }
-.contacto .container__form .form .input-container .input:focus ~ .placeholder,
-.contacto .container__form .form .input-container .input:not(:placeholder-shown) ~ .placeholder {
+.contacto .container__form .form-contact .input-container-contact .input-contact:focus ~ .placeholder-contact,
+.contacto .container__form .form-contact .input-container-contact .input-contact:not(:placeholder-shown) ~ .placeholder-contact {
   transform: translateY(-30px) translateX(10px) scale(0.75);
 }
-.contacto .container__form .form .input-container .input:not(:placeholder-shown) ~ .placeholder {
+.contacto .container__form .form-contact .input-container-contact .input-contact:not(:placeholder-shown) ~ .placeholder-contact {
   color: #808097;
 }
-.contacto .container__form .form .input-container .input:focus ~ .placeholder {
-  color: #dc2f55;
+.contacto .container__form .form-contact .input-container-contact .input-contact:focus ~ .placeholder-contact {
+  color: #08d;
 }
-.contacto .container__form .form .submit {
+.contacto .container__form .form-contact .submit-contact {
   background-color: #08d;
   border-radius: 12px;
   border: 0;
@@ -469,10 +538,85 @@ p {
   text-align: center;
   width: 100%;
 }
-.contacto .container__form .form .submit:active {
+.contacto .container__form .form-contact .submit-contact:active {
   background-color: #06b;
 }
 
+@media only screen and (max-width: 768px) {
+  .servicios {
+    display: flex;
+    flex-direction: column;
+  }
+  .servicios s .produccion,
+  .servicios .mezcla,
+  .servicios .master,
+  .servicios .grabacion,
+  .servicios .edicion,
+  .servicios .vocalcoach {
+    grid-template-columns: 1fr;
+    grid-template-areas: "div1" "div2" "div3" "div4";
+  }
+  .servicios .h2produ,
+  .servicios .h2mezcla,
+  .servicios .h2master,
+  .servicios .h2grabacion,
+  .servicios .h2edicion,
+  .servicios .h2vocalcoach {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .servicios .imgprodu,
+  .servicios .imgmezcla,
+  .servicios .imgmaster,
+  .servicios .imggrabacion,
+  .servicios .imgedicion,
+  .servicios .imgvocalcoach {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .servicios .parrprodu1,
+  .servicios .parrprodu2,
+  .servicios .parrmezcla1,
+  .servicios .parrmezcla2,
+  .servicios .parrmaster1,
+  .servicios .parrmaster2,
+  .servicios .parrgrabacion1,
+  .servicios .parrgrabacion2,
+  .servicios .parredicion1,
+  .servicios .parredicion2,
+  .servicios .parrvocalcoach1,
+  .servicios .parrvocalcoach2 {
+    padding: 20px;
+  }
+  .servicios .produproductlist,
+  .servicios .mezclaproductlist,
+  .servicios .masterproductlist,
+  .servicios .grabacionproductlist,
+  .servicios .edicionproductlist,
+  .servicios .vocalcoachproductlist {
+    padding: 20px;
+  }
+  .servicios .h3produproducts,
+  .servicios .h3mezclaproducts,
+  .servicios .h3masterproducts,
+  .servicios .h3grabacionproducts,
+  .servicios .h3edicionproducts,
+  .servicios .h3vocalcoachproducts {
+    text-align: center;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .servicios .produ_list_items,
+  .servicios .mezcla_list_items,
+  .servicios .master_list_items,
+  .servicios .grabacion_list_items,
+  .servicios .edicion_list_items,
+  .servicios .vocalcoach_list_items {
+    margin-left: 20px;
+    padding: 2px;
+  }
+}
 .escuchapar {
   text-align: justify;
 }
@@ -492,14 +636,19 @@ p {
     font-size: 18px;
   }
   .h2index {
-    font-size: 8;
+    font-size: 30px;
+  }
+  .container-hero {
+    flex-direction: column-reverse;
+    padding: 50px;
   }
   .inicio-contenedor {
-    display: grid;
-    margin-top: 50px;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: auto auto auto auto;
-    grid-template-areas: "pagina2 pagina3" "foto-pagina2 foto-pagina3 " "pagina4 pagina5" "foto-pagina4 foto-pagina5";
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .inicio-contenedor__enlace {
+    margin: 20px 0 !important;
   }
   .acercademipic {
     width: auto;
@@ -516,11 +665,17 @@ p {
     justify-content: flex-start;
     width: 100%;
   }
-  .plugins, .samples, .logos {
+  .plugins,
+  .samples,
+  .logos {
     align-self: flex-start;
     margin: 30px 0;
   }
-  .produccion, .servicios .master, .servicios .edicion, .mezcla, .servicios .grabacion, .servicios .vocalcoach, .master {
+  .produccion, .servicios .master, .servicios .edicion,
+  .mezcla,
+  .servicios .grabacion,
+  .servicios .vocalcoach,
+  .master {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 0;
@@ -528,13 +683,47 @@ p {
     padding: 20px;
     grid-template-areas: "div1" "div2" "div3" "div4";
   }
-  .imgprodu, .imgmezcla {
+  .imgprodu,
+  .imgmezcla {
     width: 100%;
     height: auto;
     margin: 20px, 0;
   }
-  .imgprodu, .h2produ, .produpartext, .h3produproducts, .produ_list_items {
+  .imgprodu,
+  .h2produ,
+  .produpartext,
+  .h3produproducts,
+  .produ_list_items {
     margin-left: 20px;
+  }
+  .logos {
+    display: none;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .acerca .acercademi-sec1 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "foto" "par1" "equip" "software";
+    margin: 50px;
+  }
+  .acerca .acercademi-sec2 {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "plugins" "samples" "logos";
+    padding: 20px;
+  }
+  .acerca .acercademipic {
+    margin: auto;
+  }
+  .acerca .acercaparr1,
+  .acerca .equipos,
+  .acerca .software,
+  .acerca .plugins,
+  .acerca .samples,
+  .acerca .logos {
+    text-align: center;
+    margin: 20px auto;
   }
 }
 @media (max-width: 425px) {
@@ -570,7 +759,11 @@ p {
     margin: 30px 0;
     font-size: 18px;
   }
-  .produccion, .servicios .master, .servicios .edicion, .mezcla, .servicios .grabacion, .servicios .vocalcoach, .master {
+  .produccion, .servicios .master, .servicios .edicion,
+  .mezcla,
+  .servicios .grabacion,
+  .servicios .vocalcoach,
+  .master {
     grid-template-columns: 1fr;
     grid-template-rows: auto;
     gap: 0;
@@ -578,12 +771,17 @@ p {
     padding: 20px;
     grid-template-areas: "div1" "div2" "div3" "div4";
   }
-  .imgprodu, .imgmezcla {
+  .imgprodu,
+  .imgmezcla {
     width: 100%;
     height: auto;
     margin: 20px, 0;
   }
-  .imgprodu, .h2produ, .produpartext, .h3produproducts, .produ_list_items {
+  .imgprodu,
+  .h2produ,
+  .produpartext,
+  .h3produproducts,
+  .produ_list_items {
     margin-left: 20px;
   }
 }

@@ -15,6 +15,7 @@
     <meta property="og:image" content="https://github.com/juanfuentesdev/juan-fuentes-website-git/blob/main/assets/img/logo2.jpg?raw=true">
 
     <title>Contacto | Juan Fuentes Music Producer |</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
     <link rel="shortcut icon" href="../assets/img/logo.ico" type="image/x icon">
@@ -26,52 +27,60 @@
     </div>
 
     <header>
-        <nav>
-            <ul class="main-nav">
-                <li class="main-nav__item"><a href="../index.html">Inicio</a></li>
-                <li class="main-nav__item"><a href="./discografia.html">Discografía</a></li>  
-                <li class="main-nav__item"><a href="./servicios.html">Servicios</a></li>
-                <li class="main-nav__item"><a href="./acercademi.html">Acerca de mí</a></li>
-                <li class="main-nav__item"><a href="#">Contacto</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark main-nav w-100">
+            <div class="container-fluid ">
+                <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav container-fluid d-flex justify-content-center">
+                    <a class="nav-link" href="../index.html">Inicio</a>
+                    <a class="nav-link" href="./discografia.html">Discografía</a>
+                    <a class="nav-link" href="./servicios.html">Servicios</a>
+                    <a class="nav-link" href="./acercademi.html">Acerca de mí</a>
+                    <a class="nav-link active" href="#">Contacto</a>
+                </div>
+                </div>
+            </div>
         </nav>
     </header>
 
 
-    <main class="contacto">
+    <div class="contacto">
         <section class="container__form">
-            <form action="" class="form">
-                <h1 id="ir-al-top" class="title">Contacto</h1>
-                <p class="subtitle">Para conocer mi portafolio de servicio de manera más personalizada contactame</p>
-                    <div class="input-container">
-                        <input id="firstname" class="input" type="text" placeholder=" " />
+            <form action="" class="form-contact">
+                <h1 id="ir-al-top" class="title-contact">Contacto</h1>
+                <p class="subtitle-contact">Para conocer mi portafolio de servicio de manera más personalizada contactame</p>
+                    <div class="input-container-contact">
+                        <input id="firstname" class="input-contact" type="text" placeholder=" " />
                         <div class="cut"></div>
-                        <label for="firstname" class="placeholder">Nombre</label>
+                        <label for="firstname" class="placeholder-contact">Nombre</label>
                     </div>
-                    <div class="input-container">
-                        <input id="lastname" class="input" type="text" placeholder=" " />
+                    <div class="input-container-contact">
+                        <input id="lastname" class="input-contact" type="text" placeholder=" " />
                         <div class="cut"></div>
-                        <label for="lastname" class="placeholder">Apellido</label>
+                        <label for="lastname" class="placeholder-contact">Apellido</label>
                     </div>
-                    <div class="input-container">
-                        <input id="email" class="input" type="text" placeholder=" " />
+                    <div class="input-container-contact">
+                        <input id="email" class="input-contact" type="text" placeholder=" " />
                         <div class="cut cut-short"></div>
-                        <label for="email" class="placeholder">Email</label>
+                        <label for="email" class="placeholder-contact">Email</label>
                     </div>
-                    <div class="input-container">
-                        <input id="phone" class="input" type="number" placeholder=" " />
+                    <div class="input-container-contact">
+                        <input id="phone" class="input-contact" type="number" placeholder=" " />
                         <div class="cut cut-short"></div>
-                        <label for="phone" class="placeholder">Número de teléfono</label>
+                        <label for="phone" class="placeholder-contact">Número de teléfono</label>
                     </div>
-                    <div class="input-container">
-                        <textarea id="textarea" name="Déjame tu mensaje" cols="30" rows="10" class="input" placeholder=" " ></textarea>
+                    <div class="input-container-contact">
+                        <textarea id="textarea" name="Déjame tu mensaje" cols="30" rows="10" class="input-contact" placeholder=" " ></textarea>
                         <div class="cut cut-short"></div>
-                        <label for="textarea" class="placeholder">Mensaje</label>
+                        <label for="textarea" class="placeholder-contact">Mensaje</label>
                     </div>
-                    <button type="text" class="submit">Enviar</button>
+                    <button type="text" class="submit-contact">Enviar</button>
             </form>
         </section>
-    </main>
+    </div>
 
 
     <!--
@@ -127,6 +136,9 @@
             <p class="p-footer">&copy; 2024 Juan Fuentes Music Producer</p>
             
         </footer>
+
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
 
 
 </body>

@@ -1,185 +1,303 @@
-
-
-h1{
+h1 {
     text-align: center;
     color: map-get($coloresdeletras, letrashs);
     margin-bottom: 50px;
     margin-top: 50px;
-    }
-    h2{
-        text-align: center;
-        color: map-get($coloresdeletras, letrashs);
-        margin-bottom: 25px;
-    }
-    p{
-        color: map-get($coloresdeletras, letrasps);
-        text-align: center;
+}
+
+h2 {
+    text-align: center;
+    color: map-get($coloresdeletras, letrashs);
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+p {
+    color: map-get($coloresdeletras, letrasps);
+    text-align: center;
+}
+
+.escuchapar {
+    padding: 20px 50px;
+    margin: 0;
+
+}
+
+.discografia {
+    img {
+        transition: 300ms ease-in-out;
+        margin: 5px 0;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+        -webkit-transition: 300ms ease-in-out;
+        -moz-transition: 300ms ease-in-out;
+        -ms-transition: 300ms ease-in-out;
+        -o-transition: 300ms ease-in-out;
     }
 
-.discografia{
-        .songs-destacados {
+    .songs-destacados {
         @include flex1;
-            img:hover {
-            transform: scale(1.5);}}
-        .songs-2024 {
-            @extend .songs-destacados;
-            img:hover {
-            transform: scale(1.5);}}
-        .songs-2023 {
-            @extend .songs-destacados;
-            img:hover {
-            transform: scale(1.5);}}
-        .songs-2022 {
-            @extend .songs-destacados;
-            img:hover {
-            transform: scale(1.5);}}
-        .songs-2021_2020 {
-            @extend .songs-destacados;
-            img:hover {
-            transform: scale(1.5);}}
-            }
 
-.servicios{
-        .produccion {
-        @include grid1;} 
-                .imgprodu { 
-                    grid-area: div1; 
-                    margin-left: 20px;} 
-                .h2produ { 
-                    text-align: left; 
-                    margin-left: 40px;} 
-                .parrprodu1{ 
-                    grid-area: div2;} 
-                .parrprodu2{ 
-                    grid-area: div3; 
-                    text-align: justify; 
-                    margin-top: 20px;} 
-                .produpartext { 
-                    text-align: justify; 
-                    margin-left: 40px;} 
-                .produproductlist{ 
-                    grid-area: div4;  
-                    color: #E9E8E8; 
-                    margin-top: 20px;} 
-                .h3produproducts { 
-                    margin-left: 20px;} 
-                .produ_list_items{ 
-                    list-style-type:circle; 
-                    margin-left: 50px;} 
-        .mezcla{
-        @include grid2;}
-                .imgmezcla {
-                    grid-area: div1;
-                    margin-right: 20px;}
-                .h2mezcla {
-                    text-align: left;
-                    margin-right: 40px;}
-                .parrmezcla1{
-                    grid-area: div2;}
-                .parrmezcla2{
-                    grid-area: div3;
-                    text-align: justify;
-                    margin-top: 20px;}
-                .mezclapartext {
-                    text-align: justify;
-                    margin-right: 40px;}
-                .mezclaproductlist{
-                    grid-area: div4;
-                    color: #E9E8E8;
-                    margin-top: 20px;}
-                .h3mezclaproducts {
-                    margin-right: 20px;}
-                .mezcla_list_items{
-                    list-style-type:circle;
-                    margin-left: 50px;}
-        .master{
-            @extend .produccion;
-                .imgmaster {
-                    grid-area: div1;
-                    margin-left: 20px;}
-                .h2master {
-                    text-align: left;
-                    margin-left: 40px;}
-                .parrmaster1{
-                    grid-area: div2;}
-                .parrmaster2{
-                    grid-area: div3;
-                    text-align: justify;
-                    margin-top: 20px; }
-                .masterpartext {
-                    text-align: justify;
-                    margin-left: 40px; }
-                .masterproductlist{
-                    grid-area: div4;
-                    color: #E9E8E8;
-                    margin-top: 20px;}
-                .h3masterproducts {
-                    margin-left: 20px;}
-                .master_list_items{
-                    list-style-type:circle;
-                    margin-left: 50px;}}
-        .grabacion{
-            @extend .mezcla;}        
-        .edicion{
-            @extend .produccion;}   
-            .vocalcoach{
-                @extend .mezcla;}           
-        }    
+        img:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
+    }
 
-.acerca{
-        .acercademi-sec1{
-            display: grid;
-            grid-template-columns: repeat(4,1fr);    
-            grid-template-rows: repeat(2, 1fr);
-            grid-template-areas: 
-            "foto par1 par1 equip"
-            "foto par1 par1 software";}
-            .acercademipic {
-                grid-area: foto;
-                margin: 50px;}
-            .acercaparr1 {
-                grid-area: par1;
-                text-align: justify;
-                margin: 50px;}
-            .equipos {
-                grid-area: equip;
-                text-align: justify;
-                margin: 50px;
-                color: #E9E8E8;
-                justify-self: center;}
-                
-            .software {
-                grid-area: software;
-                text-align: justify;
-                margin: 50px;
-                color: #E9E8E8;
-                justify-self: center;}
-        .acercademi-sec2 {
-            display: grid;
-            grid-template-columns: repeat(3,1fr);    
-            grid-template-rows: 1fr;
-            grid-template-areas: 
-            "plugins samples logos";
-            padding: 60px;}
-            .plugins {
-                grid-area: plugins;
-                color: #E9E8E8;
-                justify-self: center;
-                align-self: center;}
-            .samples {
-                grid-area: samples;
-                color: #E9E8E8;
-                justify-self: center;
-                align-self: center;}
-            .logos {
-                grid-area: logos;
-                color: #E9E8E8;
-                justify-self: center;
-                align-self: center;}
+    .songs-2024 {
+        @extend .songs-destacados;
+
+        img:hover {
+            transform: scale(1.1);
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+        }
+    }
+
+    .songs-2023 {
+        @extend .songs-destacados;
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .songs-2022 {
+        @extend .songs-destacados;
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+
+    .songs-2021_2020 {
+        @extend .songs-destacados;
+
+        img:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.servicios {
+    .produccion {
+        @include grid1;
+    }
+
+    .imgprodu {
+        grid-area: div1;
+        margin-left: 20px;
+    }
+
+    .h2produ {
+        text-align: left;
+        margin-left: 40px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .parrprodu1 {
+        grid-area: div2;
+        padding: 20px 400px 20px 50px;
+    }
+
+    .parrprodu2 {
+        grid-area: div3;
+        text-align: justify;
+        margin-top: 20px;
+        padding: 20px 400px 20px 50px;
+    }
+
+    .produpartext {
+        text-align: justify;
+        margin-left: 40px;
+    }
+
+    .produproductlist {
+        grid-area: div4;
+        color: #E9E8E8;
+        margin-top: 20px;
+        padding: 20px 30px 20px 0px;
+    }
+
+    .h3produproducts {
+        margin-left: 20px;
+        margin-bottom: 40px;
+    }
+
+    .produ_list_items {
+        list-style-type: circle;
+        margin-left: 50px;
+        padding: 2px;
+    }
+
+    .mezcla {
+        @include grid2;
+    }
+
+    .imgmezcla {
+        grid-area: div1;
+        margin-right: 20px;
+    }
+
+    .h2mezcla {
+        text-align: right;
+        margin-right: 40px;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .parrmezcla1 {
+        grid-area: div2;
+        padding: 20px 20px 20px 20px;
+    }
+
+    .parrmezcla2 {
+        grid-area: div3;
+        text-align: justify;
+        margin-top: 20px;
+        margin-top: 20px;
+        padding: 20px 30px 20px 50px;
+    }
+
+    .mezclapartext {
+        text-align: justify;
+        margin-right: 40px;
+    }
+
+    .mezclaproductlist {
+        grid-area: div4;
+        color: #E9E8E8;
+        margin-top: 20px;
+        padding: 20px 30px 20px 0px;
+    }
+
+    .h3mezclaproducts {
+        margin-right: 20px;
+        margin-bottom: 40px;
+    }
+
+    .mezcla_list_items {
+        list-style-type: circle;
+        margin-left: 50px;
+        padding: 2px;
+    }
+
+    .master {
+        @extend .produccion;
+
+        .imgmaster {
+            grid-area: div1;
+            margin-left: 20px;
         }
 
-.contacto{
-    .container__form{
+        .h2master {
+            text-align: left;
+            margin-left: 40px;
+        }
+
+        .parrmaster1 {
+            grid-area: div2;
+        }
+
+        .parrmaster2 {
+            grid-area: div3;
+            text-align: justify;
+            margin-top: 20px;
+        }
+
+        .masterpartext {
+            text-align: justify;
+            margin-left: 40px;
+        }
+
+        .masterproductlist {
+            grid-area: div4;
+            color: #E9E8E8;
+            margin-top: 20px;
+        }
+
+        .h3masterproducts {
+            margin-left: 20px;
+        }
+
+        .master_list_items {
+            list-style-type: circle;
+            margin-left: 50px;
+        }
+    }
+
+    .grabacion {
+        @extend .mezcla;
+    }
+
+    .edicion {
+        @extend .produccion;
+    }
+
+    .vocalcoach {
+        @extend .mezcla;
+    }
+}
+
+.acerca {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .acercademi-sec1 {
+        max-width: 1120px;
+        display: flex;
+
+        .acercademipic {
+            width: 100%;
+        }
+    }
+
+    .acercademi-sec2 {
+        display: flex;
+        margin: 50px 0;
+
+        .acercademi-sec2-card {
+            margin: 0 10px;
+
+            h3 {
+                color: #E9E8E8;
+                font-size: 22px;
+            }
+
+            .acercademi-sec2-card-list {
+                color: #979797;
+            }
+        }
+    }
+
+    .logos {
+        ul {
+            display: flex;
+            width: 100%;
+
+            .imgprodu {
+                margin-left: 10px;
+                width: 70px;
+                height: 70px;
+            }
+        }
+    }
+
+}
+
+.contacto {
+    .container__form {
         align-items: center;
         display: flex;
         justify-content: center;
@@ -187,7 +305,8 @@ h1{
         height: auto;
         padding: 20px 0;
         margin-top: 100px;
-        .form {
+
+        .form-contact {
             background-color: #15172b;
             border-radius: 20px;
             box-sizing: border-box;
@@ -195,24 +314,30 @@ h1{
             padding: 20px;
             width: 100%;
             max-width: 680px;
-            .title {
+
+            .title-contact {
                 color: #eee;
                 font-family: sans-serif;
                 font-size: 36px;
                 font-weight: 600;
-                margin-top: 30px;}
-            .subtitle {
+                margin-top: 30px;
+            }
+
+            .subtitle-contact {
                 color: #eee;
                 font-family: sans-serif;
                 font-size: 16px;
                 font-weight: 600;
-                margin-top: 10px;}
-            .input-container {
+                margin-top: 10px;
+            }
+
+            .input-container-contact {
                 height: 50px;
                 position: relative;
                 width: 100%;
                 margin-top: 40px;
-                .input {
+
+                .input-contact {
                     background-color: #303245;
                     border-radius: 12px;
                     border: 0;
@@ -222,7 +347,9 @@ h1{
                     height: 100%;
                     outline: 0;
                     padding: 4px 20px 0;
-                    width: 100%;}
+                    width: 100%;
+                }
+
                 .cut {
                     background-color: #15172b;
                     border-radius: 10px;
@@ -232,13 +359,19 @@ h1{
                     top: -20px;
                     transform: translateY(0);
                     transition: transform 200ms;
-                    width: 76px;}
+                    width: 76px;
+                }
+
                 .cut-short {
-                    width: 120px;}
-                .input:focus ~ .cut,
-                .input:not(:placeholder-shown) ~ .cut {
-                    transform: translateY(8px);}
-                .placeholder {
+                    width: 120px;
+                }
+
+                .input-contact:focus~.cut,
+                .input-contact:not(:placeholder-shown)~.cut {
+                    transform: translateY(8px);
+                }
+
+                .placeholder-contact {
                     color: #65657b;
                     font-family: sans-serif;
                     left: 20px;
@@ -247,16 +380,24 @@ h1{
                     position: absolute;
                     transform-origin: 0 50%;
                     transition: transform 200ms, color 200ms;
-                    top: 20px;}
-                .input:focus ~ .placeholder,
-                .input:not(:placeholder-shown) ~ .placeholder {
-                    transform: translateY(-30px) translateX(10px) scale(0.75);}
-                .input:not(:placeholder-shown) ~ .placeholder {
-                    color: #808097;}
-                .input:focus ~ .placeholder {
-                    color: #dc2f55;}
+                    top: 20px;
+                }
+
+                .input-contact:focus~.placeholder-contact,
+                .input-contact:not(:placeholder-shown)~.placeholder-contact {
+                    transform: translateY(-30px) translateX(10px) scale(0.75);
+                }
+
+                .input-contact:not(:placeholder-shown)~.placeholder-contact {
+                    color: #808097;
+                }
+
+                .input-contact:focus~.placeholder-contact {
+                    color: #08d;
+                }
             }
-            .submit {
+
+            .submit-contact {
                 background-color: #08d;
                 border-radius: 12px;
                 border: 0;
@@ -269,9 +410,100 @@ h1{
                 text-align: center;
                 width: 100%;
             }
-            .submit:active {
+
+            .submit-contact:active {
                 background-color: #06b;
             }
         }
     }
+}
+
+
+
+
+@media only screen and (max-width: 768px) {
+    .servicios {
+        display: flex;
+        flex-direction: column;
+
+        s .produccion,
+        .mezcla,
+        .master,
+        .grabacion,
+        .edicion,
+        .vocalcoach {
+            grid-template-columns: 1fr;
+            grid-template-areas:
+                "div1"
+                "div2"
+                "div3"
+                "div4";
+        }
+
+        .h2produ,
+        .h2mezcla,
+        .h2master,
+        .h2grabacion,
+        .h2edicion,
+        .h2vocalcoach {
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .imgprodu,
+        .imgmezcla,
+        .imgmaster,
+        .imggrabacion,
+        .imgedicion,
+        .imgvocalcoach {
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .parrprodu1,
+        .parrprodu2,
+        .parrmezcla1,
+        .parrmezcla2,
+        .parrmaster1,
+        .parrmaster2,
+        .parrgrabacion1,
+        .parrgrabacion2,
+        .parredicion1,
+        .parredicion2,
+        .parrvocalcoach1,
+        .parrvocalcoach2 {
+            padding: 20px;
+        }
+
+        .produproductlist,
+        .mezclaproductlist,
+        .masterproductlist,
+        .grabacionproductlist,
+        .edicionproductlist,
+        .vocalcoachproductlist {
+            padding: 20px;
+        }
+
+        .h3produproducts,
+        .h3mezclaproducts,
+        .h3masterproducts,
+        .h3grabacionproducts,
+        .h3edicionproducts,
+        .h3vocalcoachproducts {
+            text-align: center;
+            margin-left: 0;
+            margin-right: 0;
+        }
+
+        .produ_list_items,
+        .mezcla_list_items,
+        .master_list_items,
+        .grabacion_list_items,
+        .edicion_list_items,
+        .vocalcoach_list_items {
+            margin-left: 20px;
+            padding: 2px;
+        }
     }
+}

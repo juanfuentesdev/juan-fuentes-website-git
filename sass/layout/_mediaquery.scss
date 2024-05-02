@@ -1,114 +1,172 @@
-@media (max-width: 768px){
-    .header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
+@media (max-width: 768px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
-    
+
     .main-nav__item {
-    font-size: 18px;
+        font-size: 18px;
     }
-    
-    .h2index{
-    font-size: 8;    
+
+    .h2index {
+        font-size: 30px;
     }
-    
-    .inicio-contenedor{
-        display: grid;
-        margin-top: 50px;
-        grid-template-columns:repeat(4, 1fr);
-        grid-template-rows: auto auto auto auto;
-        grid-template-areas: 
-        "pagina2 pagina3"
-        "foto-pagina2 foto-pagina3 "
-        "pagina4 pagina5"
-        "foto-pagina4 foto-pagina5"
+
+    .container-hero {
+        flex-direction: column-reverse;
+        padding: 50px;
     }
-    .acercademipic{
+
+    .inicio-contenedor {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .inicio-contenedor__enlace {
+        margin: 20px 0 !important;
+    }
+
+    .acercademipic {
         width: auto;
         height: 100%;
     }
+
     .acercademi-sec1 {
         display: flex;
         flex-direction: column;
     }
-    .acercademi-sec2{
+
+    .acercademi-sec2 {
         display: flex;
         flex-direction: column;
         align-items: flex-start;
         justify-content: flex-start;
         width: 100%;
     }
-    
-    .plugins, .samples, .logos{
+
+    .plugins,
+    .samples,
+    .logos {
         align-self: flex-start;
         margin: 30px 0;
     }
 
-    .produccion, .mezcla, .master {
+    .produccion,
+    .mezcla,
+    .master {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 0;
         margin: 20px;
         padding: 20px;
         grid-template-areas:
-        "div1"
-        "div2"
-        "div3"
-        "div4";
+            "div1"
+            "div2"
+            "div3"
+            "div4";
     }
 
-    .imgprodu, .imgmezcla {
+    .imgprodu,
+    .imgmezcla {
         width: 100%;
         height: auto;
         margin: 20px, 0;
     }
 
-    .imgprodu, .h2produ, .produpartext, .h3produproducts, .produ_list_items {
+    .imgprodu,
+    .h2produ,
+    .produpartext,
+    .h3produproducts,
+    .produ_list_items {
         margin-left: 20px;
     }
 
-
-
+    .logos {
+        display: none;
     }
-    
-    
 
 
 
-    
-    
-    @media (max-width: 425px) {
-    .header{
+}
+
+@media only screen and (max-width: 768px) {
+    .acerca {
+        .acercademi-sec1 {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "foto"
+                "par1"
+                "equip"
+                "software";
+            margin: 50px;
+        }
+
+        .acercademi-sec2 {
+            grid-template-columns: 1fr;
+            grid-template-rows: auto;
+            grid-template-areas:
+                "plugins"
+                "samples"
+                "logos";
+            padding: 20px;
+        }
+
+        .acercademipic {
+            margin: auto;
+        }
+
+        .acercaparr1,
+        .equipos,
+        .software,
+        .plugins,
+        .samples,
+        .logos {
+            text-align: center;
+            margin: 20px auto;
+        }
+    }
+}
+
+
+
+
+
+
+
+@media (max-width: 425px) {
+    .header {
         padding: 0
     }
-    
+
     .navbar li a {
         text-decoration: none;
         color: black;
     }
-    
-    .inicio-contenedor{
+
+    .inicio-contenedor {
         display: grid;
         margin: 30px auto;
-        grid-template-columns:repeat(1, 1fr);
+        grid-template-columns: repeat(1, 1fr);
         grid-template-rows: auto auto auto auto;
-        grid-template-areas: 
-        "pagina2 "
-        "foto-pagina2"
-        "pagina3"
-        " foto-pagina3"
-        "pagina4"
-        "foto-pagina4"
-        "pagina5"
-        "foto-pagina5"
+        grid-template-areas:
+            "pagina2 "
+            "foto-pagina2"
+            "pagina3"
+            " foto-pagina3"
+            "pagina4"
+            "foto-pagina4"
+            "pagina5"
+            "foto-pagina5"
     }
-    
-    .footer-row{
+
+    .footer-row {
         display: flex;
         flex-direction: column;
     }
-    
+
     .footer-links {
         display: flex;
         flex-direction: column;
@@ -116,36 +174,44 @@
         justify-content: center;
         width: 100%;
     }
-    
-    .footer-links ul{
+
+    .footer-links ul {
         text-align: center;
     }
-    
-    h2{
+
+    h2 {
         margin: 30px 0;
         font-size: 18px;
     }
-    
-    .produccion, .mezcla, .master {
+
+    .produccion,
+    .mezcla,
+    .master {
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         gap: 0;
         margin: 20px;
         padding: 20px;
         grid-template-areas:
-        "div1"
-        "div2"
-        "div3"
-        "div4";
+            "div1"
+            "div2"
+            "div3"
+            "div4";
     }
-    .imgprodu, .imgmezcla {
+
+    .imgprodu,
+    .imgmezcla {
         width: 100%;
         height: auto;
         margin: 20px, 0;
     }
 
-    .imgprodu, .h2produ, .produpartext, .h3produproducts, .produ_list_items {
+    .imgprodu,
+    .h2produ,
+    .produpartext,
+    .h3produproducts,
+    .produ_list_items {
         margin-left: 20px;
     }
 
-    } 
+}

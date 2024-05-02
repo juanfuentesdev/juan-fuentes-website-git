@@ -1,26 +1,29 @@
-    header{
+    header {
         background-color: $headeryfooterbackground;
         margin-bottom: 10px;
         margin-top: 0px;
         padding: 10px;
         position: sticky;
         top: 0;
+
         nav {
             display: flex;
             justify-content: center;
+
             .main-nav__item {
                 display: inline;
                 padding: 0 10px;
-                color:map-get($coloresdeletras, letrasps);
+                color: map-get($coloresdeletras, letrasps);
                 text-decoration: none;
-                    a{
-                        color:map-get($coloresdeletras, letrasps);
-                        text-decoration: none;
-                        &:hover {
-                            color: bisque;
-                        }                       
-                    } 
+
+                a {
+                    color: map-get($coloresdeletras, letrasps);
+                    text-decoration: none;
+
+                    &:hover {
+                        color: bisque;
+                    }
                 }
             }
-        } 
-
+        }
+    }
